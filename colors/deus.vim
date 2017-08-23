@@ -481,8 +481,8 @@ call s:HL('IncSearch', s:bg0, s:hls_cursor)
 
 call s:HL('Underlined', s:blue, s:none, s:underline)
 
-call s:HL('StatusLine',   s:bg4, s:bg0, s:bold . s:inverse)
-call s:HL('StatusLineNC', s:bg2, s:fg4, s:bold . s:inverse)
+call s:HL('StatusLine',   s:bg4, s:fg2, s:bold . s:inverse)
+call s:HL('StatusLineNC', s:bg3, s:fg4, s:bold . s:inverse)
 
 " The column separating vertically split windows
 call s:HL('VertSplit', s:fg4, s:vert_split)
@@ -923,13 +923,17 @@ hi! link cStructure deusOrange
 hi! link pythonBuiltin deusOrange
 hi! link pythonBuiltinObj deusOrange
 hi! link pythonBuiltinFunc deusOrange
+hi! link pythonStatement deusOrange
 hi! link pythonFunction deusAqua
 hi! link pythonDecorator deusRed
 hi! link pythonInclude deusBlue
 hi! link pythonImport deusBlue
 hi! link pythonRun deusBlue
 hi! link pythonCoding deusBlue
-hi! link pythonOperator deusRed
+hi! link pythonOperator deusBlue
+hi! link pythonConditional deusBlue
+hi! link pythonException deusBlue
+hi! link pythonRepeat deusBlue
 hi! link pythonExceptions deusPurple
 hi! link pythonBoolean deusPurple
 hi! link pythonDot deusFg3
